@@ -89,6 +89,7 @@ mvn spring-boot:run
 ```
 
 The application will be available at `http://localhost:8080`.
+![image](https://github.com/JohannBulls/Calculator/assets/40411821/daa0c1b3-f45c-4c3f-84e9-29ab22845c69)
 
 
 ## Deployment
