@@ -43,7 +43,7 @@ Follow these steps to set up your development environment:
 2. Navigate into the project directory:
 
    ```bash
-   cd SpringBootCalculator
+   cd Calculator
    ```
 
 3. Compile the project using Maven:
