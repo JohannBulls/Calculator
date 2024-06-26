@@ -49,7 +49,7 @@ Follow these steps to set up your development environment:
 3. Compile the project using Maven:
 
    ```bash
-   mvn clean compile
+   mvn clean package
    ```
 
 ### Running the Application
