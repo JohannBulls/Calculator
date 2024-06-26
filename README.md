@@ -18,6 +18,34 @@ This project is a simple calculator application built with Spring Boot. It allow
 4. **GlobalExceptionHandler**:
     - Global exception handler to capture and handle specific exceptions thrown by any controller.
 
+### Architectural Design 
+![Diagrama en blanco](https://github.com/JohannBulls/Calculator/assets/40411821/ea413c80-f9af-42a4-b2bf-3e0d60e6be14)
+
+1. **User Interaction**:
+    - The user accesses the calculator application through the public URL of the EC2 instance where the application is hosted.
+
+2. **Request Handling**:
+    - The user's request is received by Spring's `DispatcherServlet`. This is the front controller in Spring MVC that handles all incoming HTTP requests.
+
+3. **Controller Routing**:
+    - The `DispatcherServlet` routes the request to the appropriate controller. In this case, it directs the request to `CalculadoraController`, which is responsible for handling all calculator-related operations.
+
+4. **Processing the Request**:
+    - The `CalculadoraController` processes the request. It extracts the necessary parameters from the user's input, such as the value and the type of operation (addition, subtraction, multiplication, or division).
+
+5. **Business Logic Execution**:
+    - The `CalculadoraController` delegates the actual computation to the `Calculadora` class. This class contains the business logic for performing the requested mathematical operations. The `Calculadora` class maintains the current result and updates it based on the operation performed.
+
+6. **Result Handling**:
+    - Once the `Calculadora` class has completed the computation, the `CalculadoraController` receives the result and prepares it for the view.
+
+7. **View Rendering**:
+    - The result is then sent to the view. In this application, the view is rendered using Thymeleaf templates, which dynamically generate HTML based on the data provided by the controller.
+
+8. **User Feedback**:
+    - The computed result is displayed to the user through the web interface, completing the cycle of request and response.
+
+
 ## Getting Started
 
 These instructions will help you get a copy of the project up and running on your local machine for development and testing purposes.
