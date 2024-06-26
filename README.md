@@ -101,6 +101,3 @@ We use [Git](https://git-scm.com/) for version control.
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE.txt) file for details.
-```
-
-This README.md covers the main features and functionalities of your calculator application, as well as setup and deployment instructions. If you need further adjustments or additional details, let me know.
